@@ -258,9 +258,10 @@ hr {
   background-color: gray;
 }
 
-.hero__btn {
-  display: block;
-  padding: 10px;
+.hero__btnn {
+  display: flex;
+  margin-left: 650px;
+  padding: 10px 40px;
   border: 1px solid #ccc;
   border-radius: 20px;
   background: none;
@@ -268,7 +269,7 @@ hr {
   cursor: pointer;
 }
 
-.hero__btn:hover {
+.hero__btnn:hover {
   transform: scale(1.1);
   box-shadow: 1px 1px 8px 1px #ff5a01;
 }
@@ -359,7 +360,7 @@ hr {
   gap: 100px;
 }
 
-.comments__wrapper{
+.comments__wrapper {
   margin-bottom: 100px;
 }
 
@@ -396,6 +397,13 @@ hr {
   font-size: 36px;
   top: 2200px;
   left: 660px;
+}
+
+.hr {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .browse__party {
@@ -449,7 +457,7 @@ hr {
   width: 24px;
 }
 
-.comments__happy{
+.comments__happy {
   padding-left: 100px;
 }
 
@@ -567,11 +575,11 @@ hr {
   transform: scale(1.1);
 }
 
-.footer__brand{
+.footer__brand {
   padding-left: 100px;
 }
 
-.hr{
+.hr {
   width: 1240px;
 }
 
