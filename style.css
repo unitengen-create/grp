@@ -260,8 +260,6 @@ hr {
 
 .hero__btn {
   display: block;
-  width: 150px;
-  margin: 20px auto;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 20px;
@@ -569,6 +567,14 @@ hr {
   transform: scale(1.1);
 }
 
+.footer__brand{
+  padding-left: 100px;
+}
+
+.hr{
+  width: 1240px;
+}
+
 .footer__social-1 {
   padding: 9px 8px;
   background-color: #ffffff;
@@ -626,4 +632,5 @@ hr {
 
 .footer__copy {
   font-size: 14px;
+  padding-left: 100px;
 }
