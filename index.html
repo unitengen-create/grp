@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <title>SHOP.CO</title>
     <link rel="stylesheet" href="./style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header>
       <nav class="nav">
-        <div class="contaner">
+        <div class="container">
           <div class="nav__wrapper">
-            <img src="./SHOP.CO.svg" alt="" />
+            <a href="/"> <img src="./img.g/SHOP.CO.svg" alt="" /></a>
             <ul class="nav__ul">
               <li>
                 <a href=""
@@ -37,103 +38,152 @@
             </div>
             <div class="icon">
               <img class="icon" src="./img.g/Vector (9).svg" alt="" />
-              <img class="icon" src="./img.g/Vector (10).svg" alt="" />
+              <a href="#modal" class="open-btn"
+                ><img src="./img.g/Vector (10).svg" alt=""
+              /></a>
+              <div id="modal" class="modal">
+                <div class="modal-content">
+                  <a href="#" class="close">&times;</a>
+                  <div class="tabs">
+                    <span class="active">Login</span>
+                    <span class="active-2">Register</span>
+                  </div>
+                  <p class="desc">Enter your username and password to login.</p>
+                  <input type="text" placeholder="Email" />
+                  <input type="password" placeholder="Password" />
+                  <a href="#" class="forgot">Forgot Password?</a>
+                  <button class="login-btn">Login</button>
+                  <div class="socials">
+                    <p>Or login with</p>
+                    <a href="#" class="social-1">Login with Facebook</a>
+                    <a href="#" class="social-2">Login with Google</a>
+                    <a href="#" class="social-3">Login with QR Code</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </nav>
     </header>
-    <section class="hero">
-      <div class="contaner">
-        <div class="hero__wrapper">
-          <div class="hero__cards">
-            <div class="hero__card">
-              <img
-                class="hero__star-two"
-                src="./img.g/Vector (22).svg"
-                alt=""
-              />
-              <h1 class="hero__title">
-                FIND CLOTHES <br />
-                THAT MATCHES <br />
-                YOUR STYLE
-              </h1>
-              <img class="hero__star" src="./Vector (21).svg" alt="" />
-              <p>
-                Browse through our diverse range of carefully crafted
-                garments,designed <br />
-                to bring out your individuality.
-              </p>
-              <button class="hero__btn">Shop Now</button>
-              <div class="stats">
-                <div class="hero-card">
-                  <span class="num">200+</span>
-                  <span class="label">International Brands</span>
-                </div>
-                <img src="./Line 9.svg" alt="" />
-                <div>
-                  <span class="num">2,000+</span>
-                  <span class="label">High-Quality Products</span>
-                </div>
-                <img src="./Line 9.svg" alt="" />
-                <div>
-                  <span class="num">30,000+</span>
-                  <span class="label">Happy Customers</span>
-                </div>
-              </div>
-            </div>
-            <div class="hero__img-card">
-              <img
-                height="600"
-                width="430"
-                class="hero__img"
-                src="./b26fea69ccfd8aa5825862cdb9604a4fb4930464.jpg"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="braind">
-      <div class="contaner">
-        <div class="braind__wrapper">
-          <div class="braind__imgs">
-            <div class="braind__img">
-              <img src="./img.g/Vector (12).svg" alt="" />
-            </div>
-            <div class="braind__img">
-              <img src="./img.g/Vector (19).svg" alt="" />
-            </div>
-            <div class="braind__img">
-              <img src="./img.g/Vector (13).svg" alt="" />
-            </div>
-            <div class="braind__img">
-              <img src="./img.g/Vector (17).svg" alt="" />
-            </div>
-            <div class="braind__img">
-              <img src="./img.g/Group (2).svg" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     <main>
       <section class="hero">
-        <div class="contaner">
+        <div class="container">
+          <div class="hero__wrapper">
+            <div class="hero__cards">
+              <div class="hero__card">
+                <img
+                  class="hero__star-two"
+                  src="./img.g/Vector (22).svg"
+                  alt=""
+                />
+                <h1
+                  class="hero__title"
+                  data-aos="fade-up"
+                  data-aos-easing="linear"
+                >
+                  FIND CLOTHES <br />
+                  THAT MATCHES <br />
+                  YOUR STYLE
+                </h1>
+                <img class="hero__star" src="./img.g/Vector (21).svg" alt="" />
+                <p data-aos="fade-right" data-aos-duration="1500">
+                  Browse through our diverse range of carefully crafted
+                  garments,designed <br />
+                  to bring out your individuality.
+                </p>
+                <button
+                  class="hero__btn"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                >
+                  Shop Now
+                </button>
+                <div class="stats">
+                  <div
+                    class="hero-card"
+                    data-aos="fade-right"
+                    data-aos-duration="1500"
+                  >
+                    <span class="num">200+</span>
+                    <span class="label">International Brands</span>
+                  </div>
+                  <img src="./img.g/Line 9.svg" alt="" />
+                  <div data-aos="fade-right" data-aos-duration="1500">
+                    <span class="num">2,000+</span>
+                    <span class="label">High-Quality Products</span>
+                  </div>
+                  <img src="./img.g/Line 9.svg" alt="" />
+                  <div data-aos="fade-right" data-aos-duration="1500">
+                    <span class="num">30,000+</span>
+                    <span class="label">Happy Customers</span>
+                  </div>
+                </div>
+              </div>
+              <div class="hero__img-card">
+                <img
+                  height="600"
+                  width="430"
+                  class="hero__img"
+                  src="./img.g/b26fea69ccfd8aa5825862cdb9604a4fb4930464.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="braind">
+        <div class="container">
+          <div class="braind__wrapper">
+            <div class="braind__imgs">
+              <div class="braind__img">
+                <img src="./img.g/Vector (12).svg" alt="" />
+              </div>
+              <div class="braind__img">
+                <img src="./img.g/Vector (19).svg" alt="" />
+              </div>
+              <div class="braind__img">
+                <img src="./img.g/Vector (13).svg" alt="" />
+              </div>
+              <div class="braind__img">
+                <img src="./img.g/Vector (17).svg" alt="" />
+              </div>
+              <div class="braind__img">
+                <img src="./img.g/Group (2).svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero">
+        <div class="container">
           <h1 class="hero__h1">NEW ARRIVALS</h1>
           <div class="hero__wrapper">
             <div class="hero__products">
-              <div class="hero__card">
-                <img class="hero__img" src="./image.png" />
+              <div
+                class="hero__card"
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+              >
+                <a href="./aboutCard.html">
+                  <img class="hero__img" src="./img.g/image.png"
+                /></a>
                 <h4>T-shirt with Tape Details</h4>
-                <img src="./Frame 35.png" alt="" />
+                <img src="./img.g/Frame 35.png" alt="" />
                 <p><b>$120</b></p>
               </div>
-              <div class="hero__card">
-                <img class="hero__img" src="./image 8.png" />
+              <div
+                class="hero__card"
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+              >
+                <img class="hero__img" src="./img.g/image 8.png" />
                 <h4>Skinny Fit Jeans</h4>
-                <img src="./Frame 39.png" alt="" />
+                <img src="./img.g/Frame 39.png" alt="" />
                 <div class="hero__p">
                   <p><b>$240</b></p>
                   <del
@@ -142,17 +192,32 @@
                   <p class="hero__P"><b>-20%</b></p>
                 </div>
               </div>
-              <div class="hero__card">
-                <img class="hero__img" src="./image 9 (1).png" />
+              <div
+                class="hero__card"
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+              >
+                <img class="hero__img" src="./img.g/image 9 (1).png" />
                 <h4>Checkered Shirt</h4>
-                <img src="./Frame 35.png" alt="" />
+                <img src="./img.g/Frame 35.png" alt="" />
                 <p><b>$180</b></p>
               </div>
-              <div class="hero__card">
-                <img class="hero__img" src="./image 10 (1).png" />
+              <div
+                class="hero__card"
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+              >
+                <img class="hero__img" src="./img.g/image 10 (1).png" />
                 <h4>Sleeve Striped T-shirt</h4>
-                <img src="./Frame 35.png" alt="" />
-                <div class="hero__p">
+                <img src="./img.g/Frame 35.png" alt="" />
+                <div
+                  class="hero__p"
+                  data-aos="flip-left"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="2000"
+                >
                   <p><b>$130</b></p>
                   <del
                     ><span class="hero__span"><b>$160</b></span></del
@@ -165,11 +230,21 @@
             <hr class="hr" />
             <h1 class="hero__h1">TOP SELLING</h1>
             <div class="hero__products">
-              <div class="hero__card">
-                <img class="hero__img" src="./yashil kiyim.png" />
+              <div
+                class="hero__card"
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+              >
+                <img class="hero__img" src="./img.g/yashil kiyim.png" />
                 <h4>VERTICAL STRIPED SHIRT</h4>
-                <img src="./ball.png" alt="" />
-                <div class="hero__p">
+                <img src="./img.g/ball.png" alt="" />
+                <div
+                  class="hero__p"
+                  data-aos="flip-left"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="2000"
+                >
                   <p><b>$212</b></p>
                   <del
                     ><span class="hero__span"><b>$232</b></span></del
@@ -178,25 +253,40 @@
                 </div>
               </div>
 
-              <div class="hero__card">
-                <img class="hero__img" src="./kiyim.png" />
+              <div
+                class="hero__card"
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+              >
+                <img class="hero__img" src="./img.g/kiyim.png" />
                 <h4>LOOSE FIT BERMUDA SHORTS</h4>
 
-                <img src="./Frame 40.png" alt="" />
+                <img src="./img.g/Frame 40.png" alt="" />
                 <p><b>$80</b></p>
               </div>
 
-              <div class="hero__card">
-                <img class="hero__img" src="./kalta shim.png" />
+              <div
+                class="hero__card"
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+              >
+                <img class="hero__img" src="./img.g/kalta shim.png" />
                 <h4>Checkered Shirt</h4>
-                <img src="./Frame 35.png" alt="" />
+                <img src="./img.g/Frame 35.png" alt="" />
                 <p><b>$180</b></p>
               </div>
 
-              <div class="hero__card">
-                <img class="hero__img" src="./qora.png" />
+              <div
+                class="hero__card"
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+              >
+                <img class="hero__img" src="./img.g/qora.png" />
                 <h4>FADED SKINNY JEANS</h4>
-                <img src="./Frame 35.png" alt="" />
+                <img src="./img.g/Frame 35.png" alt="" />
 
                 <p><b>$210</b></p>
               </div>
@@ -212,20 +302,32 @@
               <p class="browse1">BROWSE BY dress STYLE</p>
               <div class="browse__clothes">
                 <div>
-                  <img src="./casual2.png" alt="" class="browse__casual" />
+                  <img
+                    src="./img.g/casual2.png"
+                    alt=""
+                    class="browse__casual"
+                  />
                   <p class="browse__casual2">Casual</p>
                 </div>
                 <div>
-                  <img src="./formal2.svg" alt="" class="browse__formal" />
+                  <img
+                    src="./img.g/formal2.svg"
+                    alt=""
+                    class="browse__formal"
+                  />
                   <p class="browse__casual3">Fromal</p>
                 </div>
                 <div class="cards">
                   <div class="party__card">
-                    <img src="./party (2).svg" alt="" class="browse__party" />
+                    <img
+                      src="./img.g/party (2).svg"
+                      alt=""
+                      class="browse__party"
+                    />
                     <p class="browse__casual4">Party</p>
                   </div>
                   <div class="gym__card">
-                    <img src="./gym2.svg" alt="" class="browse__gym" />
+                    <img src="./img.g/gym2.svg" alt="" class="browse__gym" />
                     <p class="browse__casual5">Gym</p>
                   </div>
                 </div>
@@ -243,23 +345,28 @@
               </div>
               <div class="comments__arrow">
                 <div>
-                  <img src="./left (2).svg" alt="" />
+                  <img src="./img.g/left (2).svg" alt="" />
                 </div>
                 <div>
-                  <img src="./right.svg" alt="" />
+                  <img src="./img.g/right.svg" alt="" />
                 </div>
               </div>
             </div>
             <div class="comments__cards">
-              <div class="comments__card">
-                <img src="./5stars.svg" alt="" class="comments__img" />
+              <div
+                class="comments__card"
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-center"
+                data-aos-duration="1500"
+              >
+                <img src="./img.g/5stars.svg" alt="" class="comments__img" />
                 <div class="comments__sarahvery">
                   <div>
                     <p class="comments__sarah">Sarah M.</p>
                   </div>
                   <div>
                     <img
-                      src="verifyred.svg"
+                      src="./img.g/verifyred.svg"
                       alt=""
                       class="commetns__veryfyred"
                     />
@@ -273,15 +380,20 @@
                   </p>
                 </div>
               </div>
-              <div class="comments__card">
-                <img src="./5stars.svg" alt="" class="comments__img" />
+              <div
+                class="comments__card"
+                data-aos="fade-down"
+                data-aos-anchor-placement="top-center"
+                data-aos-duration="1500"
+              >
+                <img src="./img.g/5stars.svg" alt="" class="comments__img" />
                 <div class="comments__sarahvery">
                   <div>
                     <p class="comments__sarah">Alex K.</p>
                   </div>
                   <div>
                     <img
-                      src="verifyred.svg"
+                      src="./img.g/verifyred.svg"
                       alt=""
                       class="commetns__veryfyred"
                     />
@@ -296,15 +408,20 @@
                   </p>
                 </div>
               </div>
-              <div class="comments__card">
-                <img src="./5stars.svg" alt="" class="comments__img" />
+              <div
+                class="comments__card"
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-center"
+                data-aos-duration="1500"
+              >
+                <img src="./img.g/5stars.svg" alt="" class="comments__img" />
                 <div class="comments__sarahvery">
                   <div>
                     <p class="comments__sarah">James L.</p>
                   </div>
                   <div>
                     <img
-                      src="verifyred.svg"
+                      src="./img.g/verifyred.svg"
                       alt=""
                       class="commetns__veryfyred"
                     />
@@ -325,7 +442,12 @@
       </section>
       <section class="subscribe">
         <div class="container">
-          <div class="subscribe__wrapper">
+          <div
+            class="subscribe__wrapper"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+            data-aos-duration="1500"
+          >
             <div class="sub__box">
               <div class="sub__info">
                 <h1 class="sub__title">
@@ -333,7 +455,7 @@
                   OUR LATEST OFFERS
                 </h1>
                 <div class="sub__inps">
-                  <img class="sub__img" src="Vector.svg" alt="" />
+                  <img class="sub__img" src="./img.g/Vector.svg" alt="" />
                   <input
                     class="sub__inp"
                     type="text"
@@ -348,97 +470,111 @@
           </div>
         </div>
       </section>
-      <footer class="footer">
-        <div class="container">
-          <div class="footer__main">
-            <div class="footer__brand">
-              <h3 class="footer__logo">SHOP.CO</h3>
-              <p class="footer__text">
-                We have clothes that suits your style and <br />
-                which you're proud to wear. From <br />
-                women to men.
-              </p>
-              <div class="footer__socials">
-                <img class="footer__social-1" src="./twitter.svg" alt="" />
-                <img class="footer__social-2" src="./facebook.svg" alt="" />
-                <img class="footer__social-3" src="./instagram.svg" alt="" />
-                <img class="footer__social-4" src="./git hub.svg" alt="" />
-              </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__main">
+          <div class="footer__brand">
+            <h3 class="footer__logo">SHOP.CO</h3>
+            <p class="footer__text">
+              We have clothes that suits your style and <br />
+              which you're proud to wear. From <br />
+              women to men.
+            </p>
+            <div class="footer__socials">
+              <img class="footer__social-1" src="./img.g/twitter.svg" alt="" />
+              <img class="footer__social-2" src="./img.g/facebook.svg" alt="" />
+              <img
+                class="footer__social-3"
+                src="./img.g/instagram.svg"
+                alt=""
+              />
+              <img class="footer__social-4" src="./img.g/git hub.svg" alt="" />
             </div>
-            <nav class="footer__nav">
-              <div class="footer__nav-col">
-                <h1 class="footer__nav-col__title">Company</h1>
-                <ul class="footer-nav-col__list">
-                  <li><a href="#" class="footer-nav-col__link">About</a></li>
-                  <li><a href="#" class="footer-nav-col__link">Features</a></li>
-                  <li><a href="#" class="footer-nav-col__link">Works</a></li>
-                  <li><a href="#" class="footer-nav-col__link">Career</a></li>
-                </ul>
-              </div>
-              <div class="footer__nav-col">
-                <h1 class="footer__nav-col__title">Help</h1>
-                <ul class="footer-nav-col__list">
-                  <li>
-                    <a href="#" class="footer-nav-col__link"
-                      >Customer Support</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="footer-nav-col__link"
-                      >Delivery Details</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="footer-nav-col__link"
-                      >Terms & Conditions</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="footer-nav-col__link">Privacy Policy</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="footer__nav-col">
-                <h1 class="footer__nav-col__title">FAQ</h1>
-                <ul class="footer-nav-col__list">
-                  <li><a href="#" class="footer-nav-col__link">Account</a></li>
-                  <li>
-                    <a href="#" class="footer-nav-col__link"
-                      >Manage Deliveries</a
-                    >
-                  </li>
-                  <li><a href="#" class="footer-nav-col__link">Orders</a></li>
-                  <li><a href="#" class="footer-nav-col__link">Payments</a></li>
-                </ul>
-              </div>
-              <div class="footer__nav-col">
-                <h1 class="footer__nav-col__title">Resources</h1>
-                <ul class="footer-nav-col__list">
-                  <li>
-                    <a href="#" class="footer-nav-col__link">Free eBooks</a>
-                  </li>
-                  <li>
-                    <a href="#" class="footer-nav-col__link"
-                      >Development Tutorial</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="footer-nav-col__link">How to - Blog</a>
-                  </li>
-                  <li>
-                    <a href="#" class="footer-nav-col__link"
-                      >Youtube Playlist</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </nav>
           </div>
-          <div class="footer__bottom">
-            <p class="footer__copy">Shop.co © 2000-2023, All Rights Reserved</p>
+          <div class="footer__nav">
+            <div class="footer__nav-col">
+              <h1 class="footer__nav-col__title">Company</h1>
+              <ul class="footer-nav-col__list">
+                <li>
+                  <a href="#" class="footer-nav-col__link">About</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-nav-col__link">Features</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-nav-col__link">Works</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-nav-col__link">Career</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__nav-col">
+              <h1 class="footer__nav-col__title">Help</h1>
+              <ul class="footer-nav-col__list">
+                <li>
+                  <a href="#" class="footer-nav-col__link">Customer Support</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-nav-col__link">Delivery Details</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-nav-col__link"
+                    >Terms & Conditions</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="footer-nav-col__link">Privacy Policy</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__nav-col">
+              <h1 class="footer__nav-col__title">FAQ</h1>
+              <ul class="footer-nav-col__list">
+                <li>
+                  <a href="#" class="footer-nav-col__link">Account</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-nav-col__link">Manage Deliveries</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-nav-col__link">Orders</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-nav-col__link">Payments</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__nav-col">
+              <h1 class="footer__nav-col__title">Resources</h1>
+              <ul class="footer-nav-col__list">
+                <li>
+                  <a href="#" class="footer-nav-col__link">Free eBooks</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-nav-col__link"
+                    >Development Tutorial</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="footer-nav-col__link">How to - Blog</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-nav-col__link">Youtube Playlist</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </footer>
-    </main>
+        <div class="footer__bottom">
+          <p class="footer__copy">Shop.co © 2000-2023, All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
