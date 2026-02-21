@@ -14,6 +14,10 @@
   padding-top: 20px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   z-index: 2;
   position: sticky;
@@ -101,7 +105,7 @@ a {
 }
 
 .active {
-  color: green;
+  color: black;
   font-weight: 900;
   font-size: 20px;
 }
@@ -119,22 +123,79 @@ input {
   border: 1px solid #ccc;
 }
 
-.forgot {
-  margin-left: 295px;
-  font-size: 14px;
-  text-decoration: none;
-  color: greenyellow;
-}
-
 .login-btn {
   width: 100%;
   padding: 12px;
   margin-top: 20px;
-  background: green;
+  background: black;
   color: white;
   border: none;
   border-radius: 6px;
   cursor: pointer;
+}
+
+.you__also {
+  font-size: 48px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+.you__polo {
+  transition: 1.1s;
+}
+
+.you__polo:hover {
+  transform: scale(1.1);
+}
+
+.you__card {
+  margin-top: 55px;
+}
+
+.you__p1 {
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding-top: 16px;
+}
+
+.you__rating {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.you__span {
+  text-decoration: line-through;
+}
+
+.you__price {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+
+.you__20 {
+  font-size: 12px;
+  background-color: #ff33331a;
+  border-radius: 62px;
+  width: 58px;
+  padding: 6px 14px 6px 14px;
+}
+
+.you__star {
+  display: flex;
+  gap: 5.31px;
+  margin-bottom: 6px;
+  margin-top: 6px;
+}
+
+
+.you__cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 .socials {
